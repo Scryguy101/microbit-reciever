@@ -6,6 +6,8 @@ radio.onReceivedNumber(function on_received_number(receivedNumber: number) {
     serial.writeValue("z", receivedNumber)
     serial.writeValue("y", receivedNumber)
     serial.writeValue("x", receivedNumber)
+    serial.writeValue("zx", receivedNumber)
+    serial.writeValue("xy", receivedNumber)
 })
 basic.forever(function on_forever() {
     

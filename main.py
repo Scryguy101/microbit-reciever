@@ -7,6 +7,9 @@ def on_received_number(receivedNumber):
     serial.write_value("z", receivedNumber)
     serial.write_value("y", receivedNumber)
     serial.write_value("x", receivedNumber)
+    serial.write_value("zx", receivedNumber)
+    serial.write_value("xy", receivedNumber)
+
 radio.on_received_number(on_received_number)
  
 
