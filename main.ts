@@ -1,4 +1,4 @@
-basic.showString("Z RECIEVER")
+basic.showString("RECIEVER")
 radio.setGroup(125)
 serial.writeLine("Acceleration")
 radio.onReceivedNumber(function on_received_number(receivedNumber: number) {

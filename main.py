@@ -1,4 +1,4 @@
-basic.show_string("Z RECIEVER")
+basic.show_string("RECIEVER")
 radio.set_group(125)
 serial.write_line("Acceleration")
 
