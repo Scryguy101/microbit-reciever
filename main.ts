@@ -9,6 +9,6 @@ radio.onReceivedNumber(function on_received_number(receivedNumber: number) {
     serial.writeValue("zx", receivedNumber)
     serial.writeValue("xy", receivedNumber)
 })
-basic.forever(function on_forever() {
+input.onButtonPressed(Button.A, function on_button_pressed_a() {
     
 })
