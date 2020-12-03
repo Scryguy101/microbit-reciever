@@ -1,14 +1,16 @@
 basic.showString("RECIEVER")
 radio.setGroup(125)
 serial.writeLine("Acceleration")
-radio.onReceivedNumber(function on_received_number(receivedNumber: number) {
+//  def on_received_number(receivedNumber):
+//      led.toggle(4, 4)
+//      serial.write_value("z", receivedNumber)
+//      serial.write_value("y", receivedNumber)
+//      serial.write_value("x", receivedNumber)
+//      serial.write_value("zx", receivedNumber)
+//      serial.write_value("xy", receivedNumber)
+//      serial.write_line(str(input.compass_heading()))
+//  radio.on_received_number(on_received_number)
+radio.onReceivedValue(function on_received_value(name: string, value: number) {
     led.toggle(4, 4)
-    serial.writeValue("z", receivedNumber)
-    serial.writeValue("y", receivedNumber)
-    serial.writeValue("x", receivedNumber)
-    serial.writeValue("zx", receivedNumber)
-    serial.writeValue("xy", receivedNumber)
-})
-input.onButtonPressed(Button.A, function on_button_pressed_a() {
-    
+    serial.writeValue(name, value)
 })
